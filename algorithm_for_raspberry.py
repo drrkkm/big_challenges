@@ -48,7 +48,7 @@ while True:
         break
 
     f = open('t.php', 'w')
-    f.write('<?php echo ' + s + '; ?>')
+    f.write('<?php echo "' + s + '"; ?>')
     f.close()
     cv2.imshow("", roi)
     key = cv2.waitKey(30)
